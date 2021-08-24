@@ -9,7 +9,7 @@
         .row::after {
             content: "";
             clear: both;
-            display: block;
+            display: table;
         }
         [class*="col-"] {
             float: left;
@@ -52,25 +52,9 @@
         .menu li:hover {
             background-color: #0099cc;
         }
-        .aside {
-            background-color: #33b5e5;
-            padding: 15px;
-            color: #ffffff;
-            text-align: center;
-            font-size: 14px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-        }
-        .footer {
-            background-color: #0099cc;
-            color: #ffffff;
-            text-align: center;
-            font-size: 12px;
-            padding: 15px;
-        }
-        @media only screen and (max-width: 768px) {
-            [class*=col-] {
-                width: 100%;
-            }
+
+        [class*="col-"] {
+            width: 100%;
         }
 
     </style>
@@ -82,6 +66,7 @@
 </div>
 
 <div class="row">
+
     <div class="col-3 menu">
         <ul>
             <li>The Flight</li>
@@ -91,26 +76,12 @@
         </ul>
     </div>
 
-    <div class="col-6">˚
+    <div class="col-9">
         <h1>The City</h1>
         <p>Chania is the capital of the Chania region on the island of Crete</p>
         <p>Resize the browser window to see how the content respond to the resizing</p>
     </div>
 
-    <div class="col-3 right">
-        <div class="aside">
-            <h2>What?</h2>
-            <p>Chania is a city on the island of Crete</p>
-            <h2>Where?</h2>
-            <p>Crete is a Greek island in the Mediterranean Sea</p>
-            <h2>How?</h2>
-            <p>You can reach Chania airport from all over Europe</p>
-        </div>
-    </div>
-</div>
-
-<div class="footer">
-    <p>Resize the browser window to see how the content respond to the resizing</p>
 </div>
 
 </body>
