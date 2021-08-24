@@ -22,12 +22,6 @@
             font-family: "Lucida Sans", sans-serif;
         }
 
-        .header {
-            background-color: #9933cc;
-            color: #ffffff;
-            padding: 15px;
-        }
-
         .menu ul {
             list-style-type: none;
             margin: 0;
@@ -66,6 +60,20 @@
         [class*="col-"] {
             width: 100%;
         }
+        @media only screen and (min-width: 600px) {
+            .col-s-1 {width: 8.33%;}
+            .col-s-2 {width: 16.66%;}
+            .col-s-3 {width: 25%;}
+            .col-s-4 {width: 33.33%;}
+            .col-s-5 {width: 41.66%;}
+            .col-s-6 {width: 50%;}
+            .col-s-7 {width: 58.33%;}
+            .col-s-8 {width: 66.66%;}
+            .col-s-9 {width: 75%;}
+            .col-s-10 {width: 83.33%;}
+            .col-s-11 {width: 91.66%;}
+            .col-s-12 {width: 100%;}
+        }
 
         @media only screen and (min-width: 768px) {
             .col-1 {width: 8.33%;}
@@ -90,7 +98,7 @@
 </div>
 
 <div class="row">
-    <div class="col-3 menu">
+    <div class="col-3 col-s-3 menu">
         <ul>
             <li>The Flight</li>
             <li>The City</li>
@@ -99,12 +107,12 @@
         </ul>
     </div>
 
-    <div class="col-6">
+    <div class="col-6 col-s-9">
         <h1>The City</h1>
         <p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city.</p>
     </div>
 
-    <div class="col-3 right">
+    <div class="col-3 col-s-12">
         <div class="aside">
             <h2>What?</h2>
             <p>Chania is a city on the island of Crete.</p>
