@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<body>
+
+<button onclick="myFunction()">Sort Alpahbetically</button>
+<button onclick="myFunction2()">Sort Numerically</button>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+
+<script>
+    const points = [40, 100, 1, 5, 25, 10];
+    points.sort(function (a, b){return a-b});
+    document.getElementById("demo").innerHTML = points[0]
+
+</script>
+</body>
+</html>
