@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<body>
+
+<button onclick="myFunction()">Sort Alpahbetically</button>
+<button onclick="myFunction2()">Sort Numerically</button>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+
+<script>
+    const numbers1 = [45, 4, 9, 16, 25];
+    let allOver18 = numbers1.every(myFunction);
+
+    document.getElementById("demo").innerHTML = "All over 18 is" + allOver18;
+
+    function myFunction(value, index, array) {
+        return value > 18;
+    }
+
+</script>
+</body>
+</html>

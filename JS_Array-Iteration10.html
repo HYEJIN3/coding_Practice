@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<body>
+
+<button onclick="myFunction()">Sort Alpahbetically</button>
+<button onclick="myFunction2()">Sort Numerically</button>
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+
+<script>
+    const numbers1 = [45, 4, 9, 16, 25];
+    let sum = numbers1.reduceRight(myFunction);
+
+    document.getElementById("demo").innerHTML = "The sum is " + sum;
+
+    function myFunction(total, value, index, array) {
+        return total + value;
+    }
+
+</script>
+</body>
+</html>
