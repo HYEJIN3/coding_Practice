@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript Practice</title>
+</head>
+<body>
+
+<button id="throwExBtn">예외 발생!</button>
+<p id="text"></p>
+
+<script>
+    var btn = document.getElementById("throwExBtn");
+    btn.addEventListener("click", throwEx);
+    function throwEx() {
+        try {
+            throw new EvalError("직접 발생시킨 에러입니다!");
+        } catch (x) {
+            document.getElementById("text").innerHTML = x.name + "<br>";
+            document.getElementById("text").innerHTML += x.message;
+        }
+    }
+</script>
+
+
+
+
+
+</script>
+
+</body>
+</html>
